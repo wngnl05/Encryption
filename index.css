@@ -1,0 +1,51 @@
+:root {
+    --black: #252627;
+    --lightBlack: #5A5C5D;
+    --white: #FFFFFF;
+    --gray: #E1E1E1;
+    --lightGray: #F8F9FA;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 250px;
+    text-align: center;
+}
+
+main h1 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#fileArea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#zipFileInput {
+    padding: 10px 20px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    background-color: var(--lightGray);
+    color: var(--black);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#status {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--white);
+}
